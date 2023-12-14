@@ -9,17 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationStack {
-            Text("Hello, World")
-                .navigationTitle(Text("Flytebook"))
-                .toolbar {
-                    ToolbarItem(placement: .topBarTrailing) {
-                        Button(action: {
-                            print("New Flight Pressed")
-                        }) {
-                            Image(systemName: "plus")
-                        }
-                    }
+        TabView {
+            HomeView()
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+            Text("Log Book")
+                .tabItem {
+                    Image(systemName: "book")
+                    Text("Logbook")
+                }
+            Text("Settings")
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("Settings")
                 }
         }
     }
