@@ -9,13 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            Text("Hello, World")
+                .navigationTitle(Text("Flytebook"))
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button(action: {
+                            print("New Flight Pressed")
+                        }) {
+                            Image(systemName: "plus")
+                        }
+                    }
+                }
         }
-        .padding()
     }
 }
 
