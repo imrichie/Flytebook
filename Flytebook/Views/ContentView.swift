@@ -15,17 +15,18 @@ struct ContentView: View {
                     Image(systemName: "house")
                     Text("Home")
                 }
-            Text("Log Book")
+            LogbookView()
                 .tabItem {
-                    Image(systemName: "book")
+                    Image(systemName: "pencil.and.scribble")
                     Text("Logbook")
                 }
-            Text("Settings")
+            SettingsView()
                 .tabItem {
-                    Image(systemName: "gear")
+                    Image(systemName: "line.3.horizontal")
                     Text("Settings")
                 }
         }
+        
     }
 }
 
