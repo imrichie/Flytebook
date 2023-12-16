@@ -25,8 +25,7 @@ struct ContentView: View {
                     Image(systemName: "line.3.horizontal")
                     Text("Settings")
                 }
-        }
-        
+        }        
     }
 }
 

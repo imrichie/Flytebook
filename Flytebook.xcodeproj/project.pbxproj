@@ -15,6 +15,7 @@
 		13C8DE242B2BBF2300B5504A /* LogbookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C8DE232B2BBF2300B5504A /* LogbookView.swift */; };
 		13C8DE262B2BBF2B00B5504A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C8DE252B2BBF2B00B5504A /* SettingsView.swift */; };
 		13C8DE292B2BFF9500B5504A /* LogbookEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C8DE282B2BFF9500B5504A /* LogbookEntryView.swift */; };
+		13C8DE2B2B2D259600B5504A /* FlightRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C8DE2A2B2D259600B5504A /* FlightRecord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		13C8DE232B2BBF2300B5504A /* LogbookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogbookView.swift; sourceTree = "<group>"; };
 		13C8DE252B2BBF2B00B5504A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		13C8DE282B2BFF9500B5504A /* LogbookEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogbookEntryView.swift; sourceTree = "<group>"; };
+		13C8DE2A2B2D259600B5504A /* FlightRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRecord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				13C8DE132B2BA02800B5504A /* FlytebookApp.swift */,
 				13C8DE272B2BBF3200B5504A /* Views */,
+				13C8DE2C2B2D259C00B5504A /* Model */,
 				13C8DE172B2BA02900B5504A /* Assets.xcassets */,
 				13C8DE192B2BA02900B5504A /* Preview Content */,
 			);
@@ -85,6 +88,14 @@
 				13C8DE252B2BBF2B00B5504A /* SettingsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		13C8DE2C2B2D259C00B5504A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13C8DE2A2B2D259600B5504A /* FlightRecord.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 				13C8DE162B2BA02800B5504A /* ContentView.swift in Sources */,
 				13C8DE142B2BA02800B5504A /* FlytebookApp.swift in Sources */,
 				13C8DE292B2BFF9500B5504A /* LogbookEntryView.swift in Sources */,
+				13C8DE2B2B2D259600B5504A /* FlightRecord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

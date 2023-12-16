@@ -16,36 +16,19 @@ struct LogbookEntryView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                Form {
-                    Section {
-                        DatePicker("Date", selection: $flightDate)
-                        TextField("Aircraft Type", text: $aircraftType)
-                    } header: {
-                        Text("Flight Details")
-                    }
-                    
-                    Section {
-                        TextField("Pilot Name", text: $pilotName)
-                    } header: {
-                        Text("Pilot Details")
-                    }
+            Form {
+                Section {
+                    DatePicker("Date", selection: $flightDate)
+                    TextField("Aircraft Type", text: $aircraftType)
+                } header: {
+                    Text("Flight Details")
                 }
                 
-                HStack(spacing: 50) {
-                    Button("Save") {
-                        print("Saving Log Entry")
-                    }
-                    .font(.headline)
-                    
-                    Button("Cancel") {
-                        print("Canceling form input...")
-                        self.presentationMode.wrappedValue.dismiss()
-                    }
-                    .foregroundStyle(Color.red)
-                    .font(.headline)
+                Section {
+                    TextField("Pilot Name", text: $pilotName)
+                } header: {
+                    Text("Pilot Details")
                 }
-                .padding()
             }
             .navigationTitle("Log New Flight")
         }

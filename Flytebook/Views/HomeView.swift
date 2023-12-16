@@ -13,21 +13,24 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             Text("Hello, World")
-                .navigationTitle(Text("Flytebook"))
+                .font(.largeTitle)
+                .fontWeight(.light)
+                .navigationTitle("Flytebook")
                 .toolbar {
                     ToolbarItem(placement: .topBarTrailing) {
                         Button(action: {
-                            print("New Flight Pressed")
+                            print("Flightlog Entry pressed...")
                             showingSheet.toggle()
-                        }) {
+                        })  {
                             Image(systemName: "plus")
                         }
+                        
                     }
                 }
-                .sheet(isPresented: $showingSheet, content: {
-                    LogbookEntryView()
-                })
         }
+        .sheet(isPresented: $showingSheet, content: {
+            LogbookEntryView()
+        })
     }
 }
 
