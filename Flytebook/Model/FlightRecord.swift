@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LogbookEntry {
+struct FlightRecord {
     var flightDate: Date
     var flightDuration: String
     var aircraftType: String
