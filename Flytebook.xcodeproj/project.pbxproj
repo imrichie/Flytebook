@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		135CFDBC2B64CADF00F656D0 /* FlightRecord.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 135CFDBA2B64CADF00F656D0 /* FlightRecord.xcdatamodeld */; };
 		13C8DE142B2BA02800B5504A /* FlytebookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C8DE132B2BA02800B5504A /* FlytebookApp.swift */; };
 		13C8DE162B2BA02800B5504A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C8DE152B2BA02800B5504A /* ContentView.swift */; };
 		13C8DE182B2BA02900B5504A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13C8DE172B2BA02900B5504A /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		135CFDBB2B64CADF00F656D0 /* FlightRecord.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FlightRecord.xcdatamodel; sourceTree = "<group>"; };
 		13C8DE102B2BA02800B5504A /* Flytebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flytebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13C8DE132B2BA02800B5504A /* FlytebookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlytebookApp.swift; sourceTree = "<group>"; };
 		13C8DE152B2BA02800B5504A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				13C8DE132B2BA02800B5504A /* FlytebookApp.swift */,
 				13C8DE272B2BBF3200B5504A /* Views */,
 				13C8DE2C2B2D259C00B5504A /* Model */,
+				135CFDBA2B64CADF00F656D0 /* FlightRecord.xcdatamodeld */,
 				13C8DE172B2BA02900B5504A /* Assets.xcassets */,
 				13C8DE192B2BA02900B5504A /* Preview Content */,
 			);
@@ -174,6 +177,7 @@
 				13C8DE162B2BA02800B5504A /* ContentView.swift in Sources */,
 				13C8DE142B2BA02800B5504A /* FlytebookApp.swift in Sources */,
 				13C8DE292B2BFF9500B5504A /* LogbookEntryView.swift in Sources */,
+				135CFDBC2B64CADF00F656D0 /* FlightRecord.xcdatamodeld in Sources */,
 				13C8DE2B2B2D259600B5504A /* FlightRecord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,6 +384,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		135CFDBA2B64CADF00F656D0 /* FlightRecord.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				135CFDBB2B64CADF00F656D0 /* FlightRecord.xcdatamodel */,
+			);
+			currentVersion = 135CFDBB2B64CADF00F656D0 /* FlightRecord.xcdatamodel */;
+			path = FlightRecord.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 13C8DE082B2BA02800B5504A /* Project object */;
 }
