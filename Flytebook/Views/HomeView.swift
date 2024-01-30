@@ -15,7 +15,6 @@ struct HomeView: View {
             Text("Hello, World")
                 .font(.largeTitle)
                 .fontWeight(.light)
-                .navigationTitle("Flytebook")
                 .toolbar {
                     ToolbarItem(placement: .topBarTrailing) {
                         Button(action: {
@@ -24,13 +23,13 @@ struct HomeView: View {
                         })  {
                             Image(systemName: "plus")
                         }
-                        
+                        .navigationDestination(isPresented: $showingSheet) {
+                            LogbookEntryView()
+                        }
                     }
                 }
+                .navigationTitle("Flytebook")
         }
-        .sheet(isPresented: $showingSheet, content: {
-            LogbookEntryView()
-        })
     }
 }
 

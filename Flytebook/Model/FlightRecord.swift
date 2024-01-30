@@ -26,11 +26,11 @@ struct FlightRecord {
     // Aircraft Category
     var airplaneSEL: Double?
     var airplaneMEL: Double?
-    var groundTrainer: Double?
     
     // Piloting Time
     var dualReceived: Double?
     var pilotInCommand: Double?
+    var groundTrainer: Double?
     
     // Flight Conditions
     var flightConditionDay: Double?
